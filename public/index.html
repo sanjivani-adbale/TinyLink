@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyLink Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TinyLink Dashboard</h1>
+  </header>
+
+  
+  <section id="add-link">
+    <h2>Add New Link</h2>
+    <form id="linkForm">
+      <input type="url" id="longUrl" placeholder="Enter original URL" required>
+      <input type="text" id="customCode" placeholder="Custom code (optional)">
+      <button type="submit">Create Link</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+
+  <section id="links-list">
+    <h2>All Links</h2>
+    <table id="linksTable">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Target URL</th>
+          <th>Clicks</th>
+          <th>Last Clicked</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Here link are displayed on dashboard -->
+      </tbody>
+    </table>
+  </section>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
