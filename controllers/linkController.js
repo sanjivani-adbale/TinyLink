@@ -1,6 +1,6 @@
 const { nanoid } = require('nanoid');
 const validUrl = require('valid-url');
-const Link = require('../models/Link');
+const Link = require('../models/link');
 
 exports.createLink = async (req, res) => {
   try {
